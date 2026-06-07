@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2 - HTML CSS JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Task 2 Project</h1>
+        <p>Contact Form, Validation, Responsive Design & To-Do List</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="#contact">Contact</a>
+        <a href="#todo">To-Do List</a>
+        <a href="#about">About</a>
+    </nav>
+
+    <!-- Main Grid Layout -->
+    <div class="container">
+
+        <!-- Contact Form -->
+        <section id="contact" class="card">
+            <h2>Contact Form</h2>
+
+            <form id="contactForm">
+
+                <label>Name</label>
+                <input type="text" id="name">
+
+                <label>Email</label>
+                <input type="email" id="email">
+
+                <label>Message</label>
+                <textarea id="message"></textarea>
+
+                <button type="submit">Submit</button>
+
+                <p id="error"></p>
+
+            </form>
+        </section>
+
+        <!-- To Do List -->
+        <section id="todo" class="card">
+            <h2>Dynamic To-Do List</h2>
+
+            <div class="todo-container">
+                <input type="text" id="taskInput" placeholder="Enter task">
+                <button onclick="addTask()">Add Task</button>
+            </div>
+
+            <ul id="taskList"></ul>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="card">
+            <h2>Responsive Layout</h2>
+            <p>
+                This page uses Flexbox for navigation and CSS Grid
+                for arranging content sections.
+            </p>
+
+            <div class="grid-demo">
+                <div>Box 1</div>
+                <div>Box 2</div>
+                <div>Box 3</div>
+                <div>Box 4</div>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

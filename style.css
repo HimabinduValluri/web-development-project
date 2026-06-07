@@ -1,0 +1,139 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+/* Header */
+header{
+    background:#00897b;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Flexbox Navigation */
+.navbar{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    background:#00695c;
+    padding:15px;
+}
+
+.navbar a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.navbar a:hover{
+    color:yellow;
+}
+
+/* CSS Grid Layout */
+.container{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+    padding:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+h2{
+    margin-bottom:15px;
+    color:#00897b;
+}
+
+/* Form */
+form{
+    display:flex;
+    flex-direction:column;
+}
+
+input,
+textarea{
+    padding:10px;
+    margin-top:5px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    padding:10px;
+    background:#00897b;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#00695c;
+}
+
+#error{
+    color:red;
+    margin-top:10px;
+}
+
+/* To-Do */
+.todo-container{
+    display:flex;
+    gap:10px;
+    margin-bottom:15px;
+}
+
+#taskList li{
+    list-style:none;
+    background:#e0f2f1;
+    padding:10px;
+    margin-bottom:10px;
+    display:flex;
+    justify-content:space-between;
+    border-radius:5px;
+}
+
+/* Grid Demo */
+.grid-demo{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:10px;
+    margin-top:15px;
+}
+
+.grid-demo div{
+    background:#80cbc4;
+    padding:20px;
+    text-align:center;
+    border-radius:5px;
+}
+
+/* Responsive Design */
+@media(max-width:768px){
+
+    .container{
+        grid-template-columns:1fr;
+    }
+
+    .navbar{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .todo-container{
+        flex-direction:column;
+    }
+}
